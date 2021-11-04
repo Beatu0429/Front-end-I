@@ -1,12 +1,16 @@
 header img {
-    width: 100px;
-    margin-top: 20px;
+    width: 200px;
+    margin-top: 100px;
     margin-left: 670px;
     border-radius: 40%;
 }
 
 header {
     background-color: #E5E5E5;
+    background-image: url(./img/healthy-tea-leaves.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
 }
 
 
@@ -14,12 +18,13 @@ header {
 h1 {
     background-color: #C4C4C4;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-ser;
     font-weight: 700;
     font-size: 35px;
     line-height: 84.69%;
     color: #005677;
     padding: 10px;
+    margin-top: 200px;
 }
 
 h2 {
@@ -46,12 +51,13 @@ footer{
     text-align: center;
     padding: 5px;
     padding-left: 20px;
+    color: white;
 }
 
-.cel {
-    color: white;
+.bx {
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
+    font-weight: 400;
+    color: white;
     font-size: 20px;
     line-height: 16px;
     
