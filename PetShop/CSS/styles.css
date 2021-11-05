@@ -1,0 +1,30 @@
+* {
+    margin: 0%;
+}
+header {
+    background-color: #F0A83E;
+    ;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    background-color: black;
+    color: white;
+}
+
+.fas {
+    color: white;
+}
+
+.banner {
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-size: cover;
+    height: 500px;
+}
+
+p {
+    text-align: center;
+}
