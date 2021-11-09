@@ -3,7 +3,8 @@
 }
 header {
     background-color: #F0A83E;
-    ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 body {
@@ -13,6 +14,29 @@ body {
 div {
     background-color: black;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.comedero {
+    width: 100px;
+    background-color: #F0A83E;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 47%;
 }
 
 .fas {
@@ -22,9 +46,10 @@ div {
 .banner {
     background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
     background-size: cover;
-    height: 500px;
+    height: 409px;
+    text-align: center;
 }
 
-p {
-    text-align: center;
+.precio {
+    color: #F0A83E;
 }

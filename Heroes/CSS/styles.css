@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    background-color: #1CD1B0;
+    height: 38px;    
+}
+
+div p {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+header {
+    background-color: #00669F;
+    height: 101px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    position: absolute;
+    width: 128px;
+    left: 28px;
+    top: 28px;
+    font-style: 400;
+    font-size: 40px;
+}
+
+body {
+    background-color: #E5E5E5;
+    width: 100%;
+    position: relative;
+}
+
+
+
+.fondo {
+    position: absolute;
+    z-index: 2;
+}
+
+.bx {
+    width: 30px;
+    position: absolute;
+    z-index: 4;
+    color: #CC2424;
+    top: 15px;
+    left: 21px;
+}
+
+.foto {
+    position: absolute;
+    z-index: 3;
+    border-radius: 50%;
+    left: 90px;
+    top: 121px;
+}
+
+h2{
+    position: absolute;
+    z-index: 3;
+    color: black;
+    top: 267px;
+    left: 89px;
+
+}
+
+.contenido {
+    position: absolute;
+    z-index: 3;
+    color: black;
+    top:  300px;
+    padding: 16px;
+    text-align: justify;
+}
+
+.boton {
+    position: absolute;
+    z-index: 3;
+    color: white;
+    top: 460px;
+    left: 85px;
+    background-color: #00669F;
+    padding: 15px 37px;
+}
+
+
+
+article {
+    position: relative;
+    width: 300px;
+    height: 529px;
+    left: 32px;
+    top: 154px;
+    background-color: #F3F3F3;
+    border-radius: 2%;
+    display: inline-block;
+    margin: 100px;
+}
+
+footer{
+    background-color: #00669F;
+    color: white;
+    height: 51px;
+    position: relative;
+    top: 300px;
+}
+
+footer p {
+    position: relative;
+    top: 16px;
+    left: 16px;
+}
+
+
+
