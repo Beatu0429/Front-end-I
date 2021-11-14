@@ -1,27 +1,67 @@
 * {
     margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #F0A83E;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    height: 62px;
+    position: sticky;
+    top:0;
+    padding-left: 40px;
+    padding-right: 40px;
 }
+
+.categoria {
+    display: flex;
+    gap: 20px;
+
+}
+
+
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-div {
+.ofertas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 400;;
+    font-size: 10px;
+    height: 20px;
+}
+
+#ofertas {
+    margin-left: 90px;
+}
+
+.idioma {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    margin-right: 60px;
 }
 
 h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 12px;
 
 }
 
@@ -30,26 +70,219 @@ h2 {
     font-weight: 700;
 }
 
-.comedero {
-    width: 100px;
-    background-color: #F0A83E;
-    color: white;
-    box-sizing: border-box;
-    text-align: center;
-    margin-left: 47%;
-}
+
 
 .fas {
     color: white;
 }
 
 .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    flex-wrap: wrap;
     background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
     background-size: cover;
-    height: 409px;
-    text-align: center;
+    height: 500px;
+    padding: 12px;
+    padding-bottom: 107px;
+}
+
+.comedero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: #F0A83E;
+    color: white;
+    padding: 15px 23px;
+    margin-top: 12px;
+    margin-right: 100px;
+}
+
+.parrafo {
+    margin-right: 60px;
 }
 
 .precio {
     color: #F0A83E;
 }
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    margin-top: 20px;
+}
+
+.huella {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    background-color: #FBFAF6;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 78px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 29.3px;
+}
+
+.datos {
+    width: 340px;
+    height: 40px;
+    padding-left: 14px;
+    background-color: #3C2313;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.envio {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 85px;
+}
+
+.reset {
+    width: 110px;
+    height: 34px;
+    background-color: #8A8787;
+    color: white;
+    border-radius: 15px;
+    padding: 8px 25px;
+    margin-right: 6px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.send {width: 110px;
+    height: 34px;
+    background-color:  #F0A83E;
+    color: white;
+    border-radius: 15px;
+    padding: 8px 25px;
+    margin-right: 6px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.suscribete {
+    background-color: #F0A83E;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.letter {
+    display: flex;
+    align-items: center;
+    margin-left: 47px;
+}
+
+.correo { 
+    display: flex;
+    align-items: center;
+    color: #A0A0A0;
+    font-size: 9px;
+    height: 40px;
+    width: 271px;
+    background-color: white;
+    padding: 7px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.sus {
+    display: flex;
+    align-items: center;
+    background-color: #3C2313;
+    border-radius: 15px;
+    width: 70px;
+    height: 34px;
+    font-size: 9px;
+    justify-content: center;
+    margin-right: 47px;
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3C2313;
+    height: 284px;
+    color:white;
+}
+
+.loc {
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+}
+
+.ubimag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 70px;
+}
+
+.ubitext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo { 
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.texto {
+    font-weight: 700;
+    font-size: 10px;
+    font-style: normal;
+}
+
+.footerlog {
+    margin-right: 75px;
+}
+
+.derechos {
+    background-color: #222222;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
