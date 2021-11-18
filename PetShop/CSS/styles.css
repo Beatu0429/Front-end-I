@@ -129,6 +129,7 @@ h2 {
 .product {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 article {
@@ -145,12 +146,12 @@ article {
     align-items: center;
 }
 
-h3 {
+/* h3 {
     font-weight: 700;
     margin-bottom: 20px;
     font-size: 25px;
     line-height: 29.3px;
-}
+} */
 
 .datos {
     width: 340px;
@@ -242,6 +243,7 @@ h3 {
     background-color: #3C2313;
     height: 284px;
     color:white;
+    flex-wrap: wrap;
 }
 
 .loc {
@@ -284,5 +286,37 @@ h3 {
     color: white;
     font-size: 10px;
     text-align: center;
+}
+
+nav i.bx {
+    display: none;
+    }
+
+@media screen and (max-width: 480px) {
+    .ofertas {display: none;}
+
+    .categoria { display: none;}
+
+    .ubicacion {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .suscribete {
+        flex-direction: column;
+        height: 101px;
+        justify-content: space-around;
+    }
+
+    .reset, .send {
+        width: 190px;
+    }
+
+    nav i.bx {
+        display: flex;
+        color: white;
+        font-size: 25px;
+    }
+    
 }
 
