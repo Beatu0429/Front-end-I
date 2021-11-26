@@ -292,6 +292,9 @@ nav i.bx {
     display: none;
     }
 
+
+
+
 @media screen and (max-width: 480px) {
     .ofertas {display: none;}
 
@@ -323,5 +326,8 @@ nav i.bx {
         margin-right: 0px;
     }
     
+    .sus {
+        width: 100px;
+    }
 }
 

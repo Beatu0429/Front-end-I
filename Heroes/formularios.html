@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <div class="descuentos">
+        <p>Descuentos 20%</p>
+    </div>
+    <header>
+        <h1>Heroes</h1>
+    </header>
+    <main>
+        <section class="formulario">
+        <form action="/index.html" method="GET">
+            <h1>Añadí tu super!</h1>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <section class="preguntas">
+                <div class= "columnas">
+                    <div class="nombre">
+                        <label for="nombre">*Nombre</label>
+                        <input type="text" name="nombre" id="nombre">                        
+                    </div>
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+
+                    <label for="descripcion"></label>
+                    <textarea name="descripcion" id="descripcion" placeholder="Descripción"></textarea>
+                </div>
+                <div class= "columnas">
+                    <label for="especie">*Especie</label>
+                    <select name="especie" class="barra">
+                        <option value="" aria-placeholder="Especie">Especie</option>
+                        <option value="humano">Humano</option>
+                        <option value="mutante">Mutante</option>
+                        <option value="androide">Androide</option>
+                    </select>
+
+                    <label for="foto">Agregar Foto</label>
+                    <input type="file" name="foto" id="foto" accept="image/jpg, image/png">
+
+                    <label for="poderes">Poderes</label>
+                    <input type="checkbox" name="poderes" value="volar"> <span>Volar</span>
+                    <input type="checkbox" name="poderes" value="intel"> <span>SuperInteligencia</span>
+                    <input type="checkbox" name="poderes" value="rayo"> <span>Vista de rayo láser</span>
+                    <input type="checkbox" name="poderes" value="dinero"> <span>Billetera gorda</span>
+                    <hr>
+                    <label for="poderes">Tipo de personaje</label>
+                    <input type="radio" name="poderes" value="volar"> <span>Héroe / Heroina</span>
+                    <input type="radio" name="poderes" value="intel"> <span>Villano / Villana</span>
+                </div>
+            </section>
+            <button type="submit" class="enviar">Añadir</button>
+        </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
