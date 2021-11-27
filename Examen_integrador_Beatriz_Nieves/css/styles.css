@@ -8,6 +8,7 @@
     --color-secundario: rgb(35, 44, 81);
     --color-texto: rgb(143, 148, 167);
     --color-footer: rgb(29, 30, 37);
+    --color-buttonhover: rgba(242, 95, 58,0.5)
 }
 
 /* Estilos de header */
@@ -30,6 +31,10 @@ header div nav ul {
 header i {
     color: var(--color-secundario);
     font-size: 40px;
+}
+
+ul{
+    list-style: none;
 }
 
 /* primera sección del Main ilustración */
@@ -74,6 +79,11 @@ button {
     box-shadow: 0px 4px 8px rgba(242, 95, 58, 0.5);
     border-radius: 50px;
     border-style: none;
+}
+
+button:hover {
+    background-color: var(--color-buttonhover);
+    cursor: pointer;
 }
 
 /* Sección del main ventajas */
@@ -187,7 +197,7 @@ article p{
     align-items: center;
 }
 
-.banner p {
+.banner h3 {
     font-weight: bold;
     font-size: 2rem;
     color: white;
@@ -201,6 +211,16 @@ article p{
     font-weight: bold;
 }
 
+.banner button:hover{
+    color: var(--color-buttonhover);
+    cursor: pointer;
+}
+
+.formulario input:invalid{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
 /* footer*/
 
 footer {
@@ -209,7 +229,7 @@ footer {
     align-items: center;
     background-color: var(--color-footer);
     color: white;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif
 }
 
 footer .formulario{
@@ -245,10 +265,20 @@ footer .links {
     gap: 20px;
 }
 
+.links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
 footer .redes-sociales {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+}
+
+.links ul li a:hover{
+    color: var(--color-principal);
+    cursor: pointer;
 }
 
 footer div div {
@@ -259,10 +289,21 @@ footer div div {
     padding-bottom: 40px;
 }
 
+footer div div i:hover {
+    color: var(--color-principal);
+    cursor: pointer;
+}
+
 .bxl-youtube {
     color: var(--color-footer);
     background-color: white;
     border-radius: 50%;
+}
+
+.bxl-youtube:hover {
+    color: var(--color-footer);
+    background-color:var(--color-principal);
+    cursor: pointer;
 }
 
 .copyrigth {
@@ -272,7 +313,7 @@ footer div div {
     color: var(--color-texto);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
     /* header */
     header{
         padding: 30px 70px;
@@ -351,9 +392,94 @@ footer div div {
     dd {
         padding-left: 55px;
     }
+
+    /* recomendaiones */
+
+    section.recomendaciones div{
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    article {
+        width: 30vw;
+        height: 220px;
+    }
+
+    /* banner */
+
+    .banner {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 40px;
+        align-items: center;
+
+    }
+    
+    .banner p {
+        margin-left: 80px;
+        font-weight: bold;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .banner button {
+        background-color: white;
+        color: var(--color-principal);
+        font-weight: bold;
+    }
+
+    /* footer */
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 227px;
+    }
+
+    footer .redes-sociales {
+        padding-top: 30px;
+        margin: 0 20px 0; 
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 40vw;
+    }
+        
+    footer .links {
+        padding-top: 30px;
+        width: 30vw;
+        height: 128px;
+        margin-bottom: 30px;
+        line-height: 160%;
+        font-size: 0.8rem;
+        justify-content: space-around;
+    }
+    
+    footer div div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 20vw;
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+    
+        
+    .copyrigth {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 100vw;
+        padding-right: 70px;
+
+        
+    }
+
 }
-
-
 
 
 
