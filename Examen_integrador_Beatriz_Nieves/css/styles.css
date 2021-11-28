@@ -1,486 +1,501 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-:root{
-    --color-principal: rgb(242, 95, 58);
-    --color-secundario: rgb(35, 44, 81);
-    --color-texto: rgb(143, 148, 167);
-    --color-footer: rgb(29, 30, 37);
-    --color-buttonhover: rgba(242, 95, 58,0.5)
+:root {
+  --color-principal: rgb(242, 95, 58);
+  --color-secundario: rgb(35, 44, 81);
+  --color-texto: rgb(143, 148, 167);
+  --color-footer: rgb(29, 30, 37);
+  --color-buttonhover: rgba(242, 95, 58, 0.5);
 }
 
 /* Estilos de header */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px;
 }
 
 header .navegador {
-    display: none;
+  display: none;
 }
 
 header div nav ul {
-    display: flex;
+  display: flex;
 }
 
 header i {
-    color: var(--color-secundario);
-    font-size: 40px;
+  color: var(--color-secundario);
+  font-size: 40px;
+  transition: all 0.5s;
 }
 
-ul{
-    list-style: none;
+header i:hover {
+  transform: scale(2);
+}
+
+ul {
+  list-style: none;
 }
 
 /* primera sección del Main ilustración */
 
 section.ilustracion {
-    display: flex;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding-bottom: 99px;
+  display: flex;
+  font-family: "Be Vietnam Pro", sans-serif;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-bottom: 99px;
 }
 
-div.grafico img{
-    width: 80vw;
+div.grafico img {
+  width: 80vw;
 }
 
 section.ilustracion div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-section.ilustracion div h1{
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    color: var(--color-secundario);
-    padding: 0px 30px 0px 30px;
+section.ilustracion div h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-secundario);
+  padding: 0px 30px 0px 30px;
 }
 
 section.ilustracion div p {
-    font-size: 0.8rem;
-    padding: 10px 60px 40px 70px;
-    color: var(--color-texto);
-    line-height: 157%;
+  font-size: 0.8rem;
+  padding: 10px 60px 40px 70px;
+  color: var(--color-texto);
+  line-height: 157%;
 }
 
 button {
-    background-color: var(--color-principal);
-    color: white;
-    padding: 12px 30px;
-    box-shadow: 0px 4px 8px rgba(242, 95, 58, 0.5);
-    border-radius: 50px;
-    border-style: none;
+  background-color: var(--color-principal);
+  color: white;
+  padding: 12px 30px;
+  box-shadow: 0px 4px 8px rgba(242, 95, 58, 0.5);
+  border-radius: 50px;
+  border-style: none;
+  transition: all 0.5s;
 }
 
 button:hover {
-    background-color: var(--color-buttonhover);
-    cursor: pointer;
+  background-color: var(--color-buttonhover);
+  cursor: pointer;
 }
 
 /* Sección del main ventajas */
 
 section.ventajas {
-    display: flex;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-bottom: 20px;
+  display: flex;
+  font-family: "Be Vietnam Pro", sans-serif;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 section.ventajas div h3 {
-    color: var(--color-secundario);
-    text-align: center;
-    font-size: 1.6rem;
-    padding: 0 60px 20px 60px;
+  color: var(--color-secundario);
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0 60px 20px 60px;
 }
 
-section.ventajas div p{
-    color: var(--color-texto);
-    text-align: center;
-    font-size: 0.8rem;
-    line-height: 157%;
-    padding: 0 50px 40px 50px;
+section.ventajas div p {
+  color: var(--color-texto);
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 157%;
+  padding: 0 50px 40px 50px;
 }
 
-dl{
-    color: var(--color-texto);
-    text-align: justify;
-    font-size: 0.8rem;
-    line-height: 170%;
-    padding: 20px 30px 20px 30px;
-} 
+dl {
+  color: var(--color-texto);
+  text-align: justify;
+  font-size: 0.8rem;
+  line-height: 170%;
+  padding: 20px 30px 20px 30px;
+}
 
 dd {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .beneficios {
-    color: rgba(50, 56, 81, 1);
-    font-weight: bold;
-    background-color: rgb(255, 239, 234);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    padding: 8px 0 8px;
+  color: rgba(50, 56, 81, 1);
+  font-weight: bold;
+  background-color: rgb(255, 239, 234);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 8px 0 8px;
 }
 
 span {
-    background-color: var(--color-principal);
-    padding: 10px 20px;
-    color: white;
-    border-radius: 30px;
-    font-weight: normal;
+  background-color: var(--color-principal);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 30px;
+  font-weight: normal;
 }
 
 /* sección del main recomendaciones */
 
 section.recomendaciones {
-    display: flex;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 99px;
+  display: flex;
+  font-family: "Be Vietnam Pro", sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 99px;
 }
 
 section.recomendaciones h2 {
-    color: var(--color-secundario);
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 0 60px 20px 60px;
+  color: var(--color-secundario);
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0 60px 20px 60px;
 }
 
 section.recomendaciones div {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(249, 249, 249);
-    margin: 30px;
-    padding: 0px 15px 30px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+  margin: 30px;
+  padding: 0px 15px 30px 15px;
 }
 
 article img {
-    position: relative;
-    bottom: 40px;
+  position: relative;
+  bottom: 40px;
 }
 
 article h4 {
-    color: rgba(50, 56, 81, 1);
-    margin-bottom: 20px;
+  color: rgba(50, 56, 81, 1);
+  margin-bottom: 20px;
 }
 
-article p{
-    color: var(--color-texto);
+article p {
+  color: var(--color-texto);
 }
 
 /* banner*/
 
 .banner {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: var(--color-principal);
-    display: flex;
-    flex-direction: column;
-    padding: 50px 40px;
-    align-items: center;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--color-principal);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+  align-items: center;
 }
 
 .banner h3 {
-    font-weight: bold;
-    font-size: 2rem;
-    color: white;
-    text-align: center;
-    padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .banner button {
-    background-color: white;
-    color: var(--color-principal);
-    font-weight: bold;
+  background-color: white;
+  color: var(--color-principal);
+  font-weight: bold;
 }
 
-.banner button:hover{
-    color: var(--color-buttonhover);
-    cursor: pointer;
+.banner button:hover {
+  color: var(--color-buttonhover);
+  cursor: pointer;
 }
 
-.formulario input:invalid{
-    text-decoration: underline;
-    text-decoration-color: red;
+.formulario input:invalid {
+  text-decoration: underline;
+  text-decoration-color: red;
 }
 
 /* footer*/
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color-footer);
-    color: white;
-    font-family: 'Be Vietnam Pro', sans-serif
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-footer);
+  color: white;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
-footer .formulario{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    gap: 10px;
+footer .formulario {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+.formulario p {
+  display: none;
 }
 
 input {
-    border-radius: 30px;
-    padding: 10px 25px;
+  border-radius: 30px;
+  padding: 10px 25px;
 }
 
-footer button{
-    box-shadow: 0 0 0 0;
+footer button {
+  box-shadow: 0 0 0 0;
 }
 
 footer .links {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  height: 128px;
+  margin-bottom: 30px;
+  line-height: 160%;
+  font-size: 0.8rem;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .redes-sociales {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.links ul li a:hover {
+  color: var(--color-principal);
+  cursor: pointer;
+}
+
+footer div div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+footer div div i {
+    color: white;
+  }
+
+footer div div i {
+  transition: all 0.5s;
+}
+
+footer div div i:hover {
+  color: var(--color-principal);
+  cursor: pointer;
+  transform: scale(2);
+}
+
+.bxl-youtube {
+  color: var(--color-footer);
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.bxl-youtube:hover {
+  color: var(--color-footer);
+  background-color: var(--color-principal);
+  cursor: pointer;
+  transform: scale(2);
+}
+
+.copyrigth {
+  font-size: 0.5rem;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: var(--color-texto);
+}
+
+@media screen and (min-width: 376px) {
+  /* header */
+  header {
+    padding: 30px 70px;
+  }
+  header .navegador {
     display: flex;
     justify-content: space-between;
-    width: 70vw;
+    align-items: center;
+    gap: 50px;
+    color: var(--color-secundario);
+    font-size: 1rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+    width: 60%;
+  }
+
+  header .navegador ul {
+    gap: 20px;
+  }
+
+  header .navegador ul a {
+    text-decoration: none;
+    color: var(--color-secundario);
+  }
+
+  header .navegador ul a:hover {
+    color: var(--color-texto);
+  }
+
+  header i.bx {
+    display: none;
+  }
+
+  /* sección ilustración */
+
+  section.ilustracion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 70px;
+  }
+
+  div.grafico img {
+    width: 40vw;
+  }
+
+  section.ilustracion div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+  }
+
+  /* sección ventajas */
+
+  section.ventajas {
+    flex-wrap: nowrap;
+    padding: 30px 70px;
+    align-items: flex-start;
+  }
+
+  div.beneficios {
+    width: 40vw;
+  }
+
+  .ventajas h3 {
+    margin-top: 10px;
+  }
+
+  dt.beneficios {
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 0px 0 8px;
+  }
+
+  dd {
+    padding-left: 55px;
+  }
+
+  /* recomendaiones */
+
+  section.recomendaciones div {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  article {
+    width: 30vw;
+    height: 220px;
+  }
+
+  /* banner */
+
+  .banner {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 40px;
+    align-items: center;
+  }
+
+  .banner p {
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .banner button {
+    background-color: white;
+    color: var(--color-principal);
+    font-weight: bold;
+  }
+
+  /* footer */
+
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 227px;
+  }
+
+  .formulario p {
+    display: flex;
+    font-size: 0.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+    color: var(--color-texto);
+  }
+
+  footer .redes-sociales {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer .links {
+    padding-top: 30px;
+    width: 30vw;
     height: 128px;
     margin-bottom: 30px;
     line-height: 160%;
     font-size: 0.8rem;
-}
+    justify-content: space-around;
+  }
 
-.links ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.links ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-footer .redes-sociales {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-.links ul li a:hover{
-    color: var(--color-principal);
-    cursor: pointer;
-}
-
-footer div div {
+  footer div div {
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
-    font-size: 30px;
-    padding-bottom: 40px;
+    width: 20vw;
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
+
+  .copyrigth p {
+    display: none;
+  }
 }
-
-footer div div i:hover {
-    color: var(--color-principal);
-    cursor: pointer;
-}
-
-.bxl-youtube {
-    color: var(--color-footer);
-    background-color: white;
-    border-radius: 50%;
-}
-
-.bxl-youtube:hover {
-    color: var(--color-footer);
-    background-color:var(--color-principal);
-    cursor: pointer;
-}
-
-.copyrigth {
-    font-size: 0.5rem;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    color: var(--color-texto);
-}
-
-@media screen and (min-width: 376px) {
-    /* header */
-    header{
-        padding: 30px 70px;
-    }
-    header .navegador{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 50px;
-        color: var(--color-secundario);
-        font-size: 1rem;
-        font-family: 'Be Vietnam Pro', sans-serif;
-        width: 60%;
-    }
-
-    header .navegador ul{
-        gap: 20px;
-    }
-
-    header .navegador ul a{
-        text-decoration: none;
-        color: var(--color-secundario);
-    }
-
-    header .navegador ul a:hover{
-        color: var(--color-texto);
-    }
-
-    header i.bx{
-        display: none;
-    }
-
-    /* sección ilustración */
-
-    section.ilustracion{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 30px 70px;
-    }
-
-    div.grafico img{
-        width: 40vw;
-    }
-
-    section.ilustracion div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 30vw;
-    }
-
-    /* sección ventajas */
-
-    section.ventajas{
-        flex-wrap: nowrap;
-        padding: 30px 70px;
-        align-items: flex-start;
-    }
-
-    div.beneficios {
-        width: 40vw;
-    }
-
-    .ventajas h3{
-        margin-top: 10px;
-    }
-
-    dt.beneficios {
-        background-color: white;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-        padding: 0px 0 8px;
-    }
-
-    dd {
-        padding-left: 55px;
-    }
-
-    /* recomendaiones */
-
-    section.recomendaciones div{
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
-
-    article {
-        width: 30vw;
-        height: 220px;
-    }
-
-    /* banner */
-
-    .banner {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 50px 40px;
-        align-items: center;
-
-    }
-    
-    .banner p {
-        margin-left: 80px;
-        font-weight: bold;
-        font-size: 2rem;
-        color: white;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    
-    .banner button {
-        background-color: white;
-        color: var(--color-principal);
-        font-weight: bold;
-    }
-
-    /* footer */
-
-    footer {
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        height: 227px;
-    }
-
-    footer .redes-sociales {
-        padding-top: 30px;
-        margin: 0 20px 0; 
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: 40vw;
-    }
-        
-    footer .links {
-        padding-top: 30px;
-        width: 30vw;
-        height: 128px;
-        margin-bottom: 30px;
-        line-height: 160%;
-        font-size: 0.8rem;
-        justify-content: space-around;
-    }
-    
-    footer div div {
-        display: flex;
-        justify-content: space-evenly;
-        width: 20vw;
-        font-size: 20px;
-        padding-bottom: 0px;
-    }
-    
-        
-    .copyrigth {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        width: 100vw;
-        padding-right: 70px;
-
-        
-    }
-
-}
-
-
-
-
